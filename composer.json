@@ -1,0 +1,30 @@
+{
+    "name": "luisrolespermisos/luispermisos",
+    "description": "Sistema de Roles y Permisos en Laravel 7",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luisfruiz19",
+            "email": "luisfruiz19@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LuisRolesPermisos\\LuisPermisos\\":"src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.2"
+    },
+    "extra":{
+        "laravel":{
+            "providers" : [
+                "LuisRolesPermisos\\LuisPermisos\\LuisPermisosServiceProvider",
+                "LuisRolesPermisos\\LuisPermisos\\AuthServiceProvider",
+                "LuisRolesPermisos\\LuisPermisos\\EventServiceProvider"
+            ]
+        }
+    }
+}
